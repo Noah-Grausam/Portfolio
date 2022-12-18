@@ -1,10 +1,357 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <title>Portfolio - NichtNoah</title>
-</head>
-<body>
+<!--
+Author: Noah Grausam
+Github: https://github.com/Noah-Grausam
 
+♡ In love with handwritten Websites :) ♡
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                             $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                         $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                               $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                                         $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                                               $$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$                                                                                      `'           $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$                                                                  :!    !:          `I>>>>`            $$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$                                                               ^'  .//|ll|//.  '` `I>>>>>>>>>,             $$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$                                                                it/()t/ttttt//t)(/t->>>>>>>>>>!`               $$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$                                                                 ://t}:.      ';}t/t~>>>>>>>>,                   $$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$                                                               <tt///I              I///tt]>I.                       $$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$                                                                 it/]  /uuu^    :uuu(  [/t_`                           $$$$$$$$$$$$$$$
+$$$$$$$$$$$$$                                                                 ."1/{   fccc^    ,ccc|   {/}"'                            $$$$$$$$$$$$$
+$$$$$$$$$$$$                                                                 _///|.   fccc^    ,ccc|   `|//t+                            $$$$$$$$$$$$
+$$$$$$$$$$$                                                                 ^l>{/{    fcccccccccccc|    (t?                               $$$$$$$$$$$
+$$$$$$$$$$                                                              ^I>>>>+)/1    fccz[????}zcc|   .(/1:                               $$$$$$$$$$
+$$$$$$$$$                                                           `Ii>>>>>>[////`   fccc^    ,ccc|   ^////~                               $$$$$$$$$
+$$$$$$$                                                         'Ii>>>>>>>>>>>>>{//'  fccc^    ,ccc|  '//-                                    $$$$$$$
+$$$$$$$                                                      Ii>>>>>>>>>>>>>>>>>{//|` ":::.    .:::" `|//]                                    $$$$$$$
+$$$$$$                                                   :i>>>>>>>>>>>>>>>>>>>><tt/t/)'            '(/t|t/^                                    $$$$$$
+$$$$$                                                ,>>>>>>>>>>>>>>>>>>>>>>>>>>>>l.|//t):.    .;1t///                                          $$$$$
+$$$$                                            .,>>>>>>>>>>>>>>>>>>>>>>>>>>>>>i`  <//]+|///t////(+]//i                                          $$$$
+$$$$                                         'I>>>>>>>>>>><<<<<<<<<>>>>><<<<<I''''       |t[  [/|._+                                             $$$$
+$$$                                        ">>>>>>>>>>>><(((((((((({>>>-((((((((((I         (t1^"{/t-'`1t]                                        $$$
+$$$                                      ">>>>>>>>>>>>>>>>}(((((((_>>>>><)(((((().     .~` ^(///ttttt////]   ^                                    $$$
+$$                                     'i>>>>>>>>>>>>>>>>>}(((((((_>>>>><)(((((((>l    _//t/t-"       `i|////tI                                    $$
+$                                     ,>>>>>>>>>>>>>>>>>>>}(((((((_>>>>><)(((((((>>>`  ,t/)^             .-//}                                      $
+$                                    ;>>>~J{>>>>><Ut>>>>>>}(((((((_>>>>><)(((((((>>i)//t/i   I---------_.  .|/||('                                  $
+$                                   ;>>>>jOz>>>>>(OZ~>>>>>}(((((((_>>>>><)(((((((>>><//t!    -ccccccczcn'   `t//('                                  $
+                                   `>>>>>jOz>>>>>(OZ~>>>>>}(((((((_>>>>><)(((((((>>>>{/{        !zcc/        l/(
+                                  .>>>>>>jOz>>>>>(OZ~>>>>>}(((((((_>>>>><)(((((((>i////_        !zcc/        ^//t1:
+                                  ,>>>>xuUOLnuuuuXOZvu}>>>}(((((((_>>>>><)(((((((>>+}//?        !zcc/        "//|};
+                                  l>>>>QOOOOOOOOOOOOOO|>>>}(((((((_>>>>><)(((((((>>>>[t)        !zcc/        ~/1
+                                  i>>>>QOOOOOOOOOOOOOO|>>>}(((((((_>>>>><)(((((((>>~////}       !zcc/       It//1'
+                                  >>>>>QOOOOOOOOOOOOOO|>>>}(((((((_>>>>><)(((((((>>>~~~//{      :111?      ~//][[
+                                  i>>>>QOOOOOOOOOOOOOO|>>>}(((((((_>>>>><)(((((((>>>>>>-///[             I//t>
+                                  l>>><COOOOOOOOOOOOOO+>>>}(((((((_>>>>><)(((((((>>>>><//|)//t[,.   .`<t/////|`
+                                  ,>>>>~OOOOOOOOOOOOOx>>>>}(((((((_>>>>><)(((((((>>>>>>>.  ^////////t///tI
+                                  .>>>>>>vOOOOOOOOOL->>>>>}(((((((_>>>>><)(((((((>>>>>>!^+>`{[:<;//)  ^((;
+                                   ^>>>>>><QOOOOOOt>>>>>>>}(((((((_>>>>><)(((((((>>~]>>`{/t]<?t/}.,`;
+                                    I>>>>>>1OOOOOv>>>>>>>>}(((((((_>>>>><)(((((((>>1///t/tt///t///)t/)
+                                     I>>>>><[0OO/+>>>>>>>>}(((((((_>>>>><)(((((((i>(/t}:.       `i|//-
+                                      :>>>>+j0OOc]>>>>>>>>}(((((((_>>>>><)(((((////t<              `)////1
+$                                      `>>>-mOOOOt>>>>>>>>}(((((((_>>>>><)((((((//t'    fccc;        !t/{                                           $
+$                                        ;>>>UOQ<>>>>>>>>>}(((((((_>>>>><)(((|/t/(.     fccc;         i/t;.                                         $
+$                                          I>UOQ<>>>>>>>>>}(((((((_>>>>><)(((///t!      fccc;          )///(                                        $
+$$                                           YOQ<>>>>>>>>>}(((((((+iiiii>)(((((/t'      fccc;          +t1.                                        $$
+$$$                                          UOQ:Ii>>>>>>>}(((((()JOOOOO0|(((|///,      fccc;          ]/jCOOOOOOx                                $$$
+$$$                                          UOQ"    ^,I!i}(((((((|(1111)((((/t//]      fccc_!!!I     `t///))11QOU                                $$$
+$$$$                                         UOL"         _(((((((`     .1((((((//:     fcccccccr     [/{'     LOU                               $$$$
+$$$$                                         UOOOOOOOOOOOOOJ|)))x0OOOOOOOOc())(////_    .''''''''   '(//rOOOOOOOOJ                               $$$$
+$$$$$                                         ,:::::::::::::::::::::::::::::::;)1+///i            .{/t/tt~::::::,                               $$$$$
+$$$$$$                                                                             )///t[;'...`>|t///^                                         $$$$$$
+$$$$$$$                                                                           ,||i"[///tt///(~?//i                                        $$$$$$$
+$$$$$$$                                                                                ^tt-  +/t^                                             $$$$$$$
+$$$$$$$$$                                                                                                                                   $$$$$$$$$
+$$$$$$$$$$                        l|||||i       )|||[       l|||||^ "/||||||||||}   l|||||'           "}jucvur/?,                          $$$$$$$$$$
+$$$$$$$$$$$                        jccccr      _ccccz+     ^zcccc|  :zccccccccccj   ~ccccc`         "uccccccccccn.                        $$$$$$$$$$$
+$$$$$$$$$$$$                       'vcccz]    Izcccccn.    {ccccv.  :zccccj|||||[   ~ccccc`        "zccccu>,;+uf                         $$$$$$$$$$$$
+$$$$$$$$$$$$$                       [zcccc"   jccccccc/   !zcccci   :zcccc_         ~ccccc`        <zcccc/                              $$$$$$$$$$$$$
+$$$$$$$$$$$$$$$                      fcccz1  1zcczucccz<  rcccz|    :zcccczXXXXX[   ~ccccc`        `zccccccczc(,                      $$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$                     !zcccz!;cccct`vcccn -zcccx     :zcccccccccc[   ~ccccc`          ]uczcccccccz]                   $$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$                    [zcccfvcccz, :ccccfzcccz!     :zcccc{iiiii"   ~ccccc`              .>/cccccz>                $$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$                   .nccccccccl   (cccccccc[      :zcccc_         ~ccccc`         ^);     ]ccccz>               $$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$                  !zcccccz|    'vccccccv'      :zcccczzzzzzj   ~ccccczzzzzz)  !zcczvxxccccccj              $$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$                 )cccccr      icccccc`       :zccccccccccj   ~ccccccccccc1  }czcccccccccu<             $$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$                `````.       `````'         ```````````'   .```````````.     `,IllI;^              $$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                                               $$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                                         $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                                   $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                               $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                       $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                                         $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                             $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$                                 $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+-->
+<head>
+    <!-- MetaTags -->
+    <meta charset="UTF-8">
+    <meta name="description" content="NichtNoah Portfolio">
+    <meta name="author" content="Noah Grausam">
+    <meta name="keywords" content="NichtNoah, Noah Grausam, Portfolio">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.ico">
+    <title>Portfolio - NichtNoah</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+    <link rel="stylesheet" href="css/select2/select2.min.css">
+    <link rel="stylesheet" href="css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/lightcase/lightcase.css">
+    <!-- <link rel="stylesheet" href="css/unpkg/aos.css"/> second scrollbar -->
+    <link rel="stylesheet" href="css/home.css"/>
+
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400|Work+Sans:300,400,700" rel="stylesheet">
+</head>
+<body data-spy="scroll" data-target="#navbar" class="static-layout">
+<nav id="header-navbar" class="navbar navbar-expand-lg py-4">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center text-white" href="/">
+            <h3 class="font-weight-bolder mb-0">Noah Grausam</h3>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav-header" aria-controls="navbar-nav-header" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="lnr lnr-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar-nav-header">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">Über mich</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carapp.html">CarAPP</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="slingspace.html">SlingSpace</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="phoenixmc.html">PhönixMC</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Kontakt</a>
+                </li>
+                <li class="nav-item">
+                    <a id="side-search-open" class="nav-link" href="#">
+                        <span class="lnr lnr-magnifier"></span>
+                    </a>
+                </li>
+                <li class="nav-item only-desktop">
+                    <a class="nav-link" id="side-nav-open" href="#">
+                        <span class="lnr lnr-menu"></span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div id="side-nav" class="sidenav">
+    <a href="javascript:void(0)" id="side-nav-close">&times;</a>
+
+    <div class="sidenav-content">
+        <p>
+            Johannisgasse 16, 4600 Wels
+        </p>
+        <p>
+            <span class="fs-16 primary-color">(+43) 676 6862420</span>
+        </p>
+        <p>noah.grausam@htl-wels.at</p>
+    </div>
+</div><div id="side-search" class="sidenav">
+    <a href="javascript:void(0)" id="side-search-close">&times;</a>
+    <div class="sidenav-content">
+        <form action="">
+
+            <div class="input-group md-form form-sm form-2 pl-0">
+                <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <button class="input-group-text red lighten-3" id="basic-text1">
+                        <span class="lnr lnr-magnifier"></span>
+                    </button>
+                </div>
+            </div>
+
+        </form>
+    </div>
+</div>
+<div class="jumbotron d-flex align-items-center">
+    <div class="container text-center">
+        <h1 class="display-1 mb-4 name">Nicht<br>Noah</h1>
+    </div>
+    <div class="rectangle-1"></div>
+    <div class="rectangle-2"></div>
+    <div class="rectangle-transparent-1"></div>
+    <div class="rectangle-transparent-2"></div>
+    <div class="circle-1"></div>
+    <div class="circle-2"></div>
+    <div class="floatingImg triangle-1">
+        <img src="img/jumbotronIcons/obj_triangle.png" alt="">
+    </div>
+    <div class="floatingImg img-1">
+        <img src="img/jumbotronIcons/java.svg" alt="">
+    </div>
+    <div class="floatingImg img-2">
+        <img src="img/jumbotronIcons/code-solid.svg" alt="">
+    </div>
+    <div class="floatingImg img-3">
+        <img src="img/jumbotronIcons/sass.svg" alt="">
+    </div>
+    <div class="floatingImg img-4">
+        <img src="img/jumbotronIcons/square-js.svg" alt="">
+    </div>
+
+</div>	<!-- Features Section-->
+<section id="features" class="bg-white">
+    <div class="container">
+        <div class="section-content">
+            <!-- Section Title -->
+            <div class="title-wrap mb-5" data-aos="fade-up">
+                <h2 class="section-title">
+                    Darf ich mich vorstellen: Ich bin <a href="https://github.com/Noah-Grausam" target="_blank">Noah Grausam</a>!
+                </h2>
+                <p class="section-sub-title">Arrangierter, motivierter und ausgebildeter: <br> Software-Engineer, Fullstack-Developer und Netzwerktechniker.</p>
+            </div>
+            <!-- End of Section Title -->
+            <div class="row">
+                <!-- Features Holder-->
+                <div class="col-md-10 offset-md-1 features-holder">
+                    <div class="row">
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center mt-4">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="fas fa-school fa-2xl"></i>
+                                </div>
+                                <h4>Hervorragende Ausbildung</h4>
+                                <p>Abgeschlossene Ausbildung an der HTBLA-Wels im Zweig IT und freiwillige Zertifikate wie CCNAv7.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="fa-solid fa-lightbulb fa-2xl"></i>
+                                </div>
+                                <h4>Kreativität</h4>
+                                <p>Die Oberfläche eines Programmes ist das 'A' und 'O'. Ein gutes Gespür dafür hab ich durch langes lernen und anpassen entwickelt.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="fa-solid fa-people-group fa-2xl"></i>
+                                </div>
+                                <h4>Teamfähig</h4>
+                                <p>Mit anderen Menschen zu arbeiten fiehl mir schon immer leicht. Gemeinsam an etwas Bewegendes zu arbeiten war schon immer einer meiner größten Träume!</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="fa-solid fa-gear fa-2xl"></i>
+                                </div>
+                                <h4>Logisches Denken</h4>
+                                <p>Einfallsreiche Methoden zum Lösen von Problemen ist eines meiner Erkennungsmerkmale. Dies übt sich auch sehr positiv auf meine mathematischen Kompetenzen aus.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                        <!-- Features Item -->
+                        <div class="col-md-4 col-sm-12 text-center mt-4">
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="fa-solid fa-brain fa-2xl"></i>
+                                </div>
+                                <h4>Mindset zählt</h4>
+                                <p>Stark begeistert von IT war ich schon immer. Ich erstrebe immer neues zu lernen und neue zukunftsorientierte Technologien zu erforschen.</p>
+                            </div>
+                            <div class="shadow rounded feature-item p-4 mb-4" data-aos="fade-up">
+                                <div class="my-4">
+                                    <i class="fa-solid fa-server fa-2xl"></i>
+                                </div>
+                                <h4>Umgang mit Server</h4>
+                                <p>Sowohl in Netzwerktechnik, meiner Freizeit als auch beim CCNA habe ich den Umgang mit Netzwerkinfrastruktur und Servern gelernt.</p>
+                            </div>
+                        </div>
+                        <!-- End of Feature Item -->
+                    </div>
+                </div>
+                <!-- End of Features Holder-->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Features Section-->	<section class="featurettes overlay bg-fixed" style='background-image: url("./img/code.PNG")'>
+
+    <div class="container" style="height: 600px">
+        <div class="section-content">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row align-items-center text-white">
+
+                        <div class="col-md-4 col-sm-6">
+                            <h4 class="mb-4">Programmieren mit professionellen Tools</h4>
+                            <p>Mit Programmen von Jetbrains wie IntelliJ, WebStorm oder auch IDEs wie VisualStudio weiß ich umzugehen und sind mein persönlicher Favourite.</p>
+                            <!-- <button type="button" class="btn btn-outline-primary">FEATURES</button> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="mastfoot">
+    <div class="inner container">
+        <div class="row">
+            <div class="col-lg-4 col-md-12 d-flex align-items-center">
+
+            </div>
+            <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                <p class="mx-auto text-center mb-0">&copy; 2022 Design by <a href="https://github.com/Noah-Grausam" target="_blank">Noah Grausam</a>.</p>
+            </div>
+            <div class="col-lg-4 col-md-12 d-flex align-items-center">
+                <ul>
+                    <li>
+                        <a href="" target="_blank" style="--clr:#7289da">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/nichtnoah.rtc/" target="_blank" style="--clr:#C13584">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/noah-grausam-629a231a3/" target="_blank" style="--clr:#0077b5">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/Noah-Grausam" target="_blank" style="--clr:#f0f6fc">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>	<!-- External JS -->
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+<script src="js/bootstrap/popper.min.js"></script>
+<script src="js/bootstrap/bootstrap.min.js"></script>
+<script src="js/select2/select2.min.js "></script>
+<script src="js/owlcarousel/owl.carousel.min.js"></script>
+<script src="js/stellar/jquery.stellar.js" type="text/javascript" charset="utf-8"></script>
+<script src="js/isotope/isotope.min.js"></script>
+<script src="js/lightcase/lightcase.js"></script>
+<script src="js/waypoints/waypoint.min.js"></script>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://kit.fontawesome.com/be3352c11e.js" crossorigin="anonymous"></script>
+
+<!-- Main JS -->
+<script src="js/app.min.js "></script>
 </body>
 </html>
